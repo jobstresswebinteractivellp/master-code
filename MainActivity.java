@@ -17,7 +17,7 @@ import android.content.Intent;
 
 public class MainActivity extends Activity implements OnClickListener
 {
-    EditText name,age,phone,email,username,password;
+    EditText userid,name,age,phone,email,username,password;
     Button register,viewall;
     SQLiteDatabase db;
     RadioButton r1,r2;
@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements OnClickListener
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        userid=(EditText)findViewById(R.id.editText3);
         name=(EditText)findViewById(R.id.editText);
         age=(EditText)findViewById(R.id.editText2);
         phone=(EditText) findViewById(R.id.editText4);
@@ -47,19 +47,19 @@ public class MainActivity extends Activity implements OnClickListener
 
         // Creating database and table
         db=openOrCreateDatabase("UserDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS user(name VARCHAR,age INTEGER,phone INTEGER,email VARCHAR,username VARCHAR,password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS user(userid VARCHAR PRIMARY KEY,name VARCHAR,age INTEGER,phone INTEGER,email VARCHAR,username VARCHAR,password VARCHAR);");
     }
 
     public void onClick(View view) {
         // Inserting a record to the Student table
         if (view == register) {
             // Checking for empty fields
-            if (name.getText().toString().trim().length() == 0 ||
+            if (userid.getText().toString().trim().length() == 0 ||name.getText().toString().trim().length() == 0 ||
                     age.getText().toString().trim().length() == 0 || phone.getText().toString().trim().length() == 0 || email.getText().toString().trim().length() == 0 || username.getText().toString().trim().length() == 0 || password.getText().toString().trim().length() == 0) {
                 showMessage("Error", "Please enter all values");
                 return;
             }
-            db.execSQL("INSERT INTO user VALUES('" + name.getText() + "','" + age.getText() +
+            db.execSQL("INSERT INTO user VALUES('" + userid.getText() + "','" + name.getText() + "','" + age.getText() +
                     "','" + phone.getText() + "','" + email.getText() + "','" + username.getText() + "','" + password.getText() + "');");
             showMessage("Success", "Registration successful");
             clearText();
@@ -78,12 +78,13 @@ public class MainActivity extends Activity implements OnClickListener
         StringBuffer buffer=new StringBuffer();
         while(c.moveToNext())
         {
-            buffer.append("name: "+c.getString(0)+"\n");
-            buffer.append("age: "+c.getString(1)+"\n");
-            buffer.append("phone: "+c.getString(2)+"\n\n");
-            buffer.append("email: "+c.getString(3)+"\n\n");
-            buffer.append("username: "+c.getString(4)+"\n\n");
-            buffer.append("password: "+c.getString(5)+"\n\n");
+            buffer.append("userid: "+c.getString(0)+"\n");
+            buffer.append("name: "+c.getString(1)+"\n");
+            buffer.append("age: "+c.getString(2)+"\n");
+            buffer.append("phone: "+c.getString(3)+"\n");
+            buffer.append("email: "+c.getString(4)+"\n");
+            buffer.append("username: "+c.getString(5)+"\n");
+            buffer.append("password: "+c.getString(6)+"\n\n\n");
         }
         showMessage("user Details", buffer.toString());
     }}
@@ -98,6 +99,7 @@ public class MainActivity extends Activity implements OnClickListener
     }
     public void clearText()
     {
+        userid.setText("");
         name.setText("");
         age.setText("");
         phone.setText("");
