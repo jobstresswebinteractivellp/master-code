@@ -1,7 +1,6 @@
-package com.example.ksb.petuserreg;
+package com.example.ksb.petcare4;
 
 public class User {
-
     //variables
     int id;
     String name;
@@ -40,4 +39,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
