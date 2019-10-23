@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hospitalregister"
+    android:background="@drawable/pet2">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="29dp"
+        android:text="HOME"
+        tools:text="@string/btn3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="82dp"
+        android:layout_height="33dp"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:text="Hosid" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginEnd="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="-132dp"
+        android:text="Hosname" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="76dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="132dp"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="79dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignStart="@+id/textView"
+        android:text="Phoneno" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="77dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/editText7"
+        android:layout_alignStart="@+id/textView"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="76dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignStart="@+id/textView"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText5"
+        android:layout_alignStart="@+id/editText3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit4" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/editText3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit5" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="191dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit6" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginBottom="257dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit7" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginBottom="171dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit8" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="121dp"
+        android:text="REGISTER"
+        tools:text="@string/btn4" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="77dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignStart="@+id/textView"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_below="@+id/textView13"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="@string/edit9" />
+
+</RelativeLayout>
