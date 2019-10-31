@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addnotify">
+
+    <EditText
+        android:id="@+id/editText23"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="117dp"
+        android:hint="Name"
+        tools:text="@string/edit23" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText23"
+        android:layout_alignLeft="@+id/editText23"
+        android:layout_alignRight="@+id/editText23"
+        android:layout_alignStart="@+id/editText23"
+        android:layout_below="@+id/editText23"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:hint="Subject"
+        tools:text="@string/edit24" />
+
+    <EditText
+        android:id="@+id/editText25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText24"
+        android:layout_alignLeft="@+id/editText24"
+        android:layout_alignRight="@+id/editText24"
+        android:layout_alignStart="@+id/editText24"
+        android:layout_below="@+id/editText24"
+        android:ems="10"
+        android:hint="Body"
+        android:inputType="textPersonName"
+        tools:text="@string/edit25" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp"
+        android:text="Notification"
+        tools:text="@string/btn18" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="13dp"
+        android:text="BACK"
+        tools:text="@string/btn17" />
+
+
+</RelativeLayout>

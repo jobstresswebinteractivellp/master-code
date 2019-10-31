@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adminhome"
+    android:background="@drawable/download6">
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="75dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="VIEW USER DETAILS"
+        tools:text="@string/btn10" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="165dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button10"
+        android:layout_marginTop="142dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="VIEW HOSPITAL DETAIL"
+        tools:text="@string/btn11" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button10"
+        android:layout_marginTop="215dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="ADD NOTIFICATION"
+        tools:text="@string/btn12" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="165dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button10"
+        android:layout_marginBottom="104dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="VIEW FEEDBACK"
+        tools:text="@string/btn13" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="11dp"
+        android:background="@android:color/darker_gray"
+        android:text="LOGOUT"
+        tools:text="@string/btn14" />
+
+</RelativeLayout>
