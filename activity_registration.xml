@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration"
+    android:background="@drawable/pet1">
+
+    <TextView
+        android:id="@+id/regi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        android:ems="10"
+        android:gravity="center"
+        android:text="REGISTRATION"
+        android:textColor="#0C0C0C"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif-condensed-medium" />
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_light"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        tools:text="@string/edit2" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        tools:text="@string/edit3" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:textColor="#000"
+        tools:text="@string/edit4" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        tools:text="@string/edit5" />
+
+    <EditText
+        android:id="@+id/editPasswordd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Re_enter Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        tools:text="@string/edit6" />
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPasswordd"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:text="Register "
+        tools:text="@string/btn2" />
+
+</RelativeLayout>

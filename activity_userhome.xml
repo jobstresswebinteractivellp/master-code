@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userhome"
+    android:background="@drawable/pet">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="189dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="159dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="NOTIFICATIOS"
+        tools:text="@string/btn5" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="189dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="240dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/btn6"
+        android:visibility="visible"
+        tools:text="@string/btn4" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button5"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginRight="-8dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="LOGOUT"
+        tools:text="@string/btn6" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/btn3"
+        tools:text="@string/btn3" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="110dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginStart="20dp"
+        android:text="Hosid"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
+
+</RelativeLayout>
